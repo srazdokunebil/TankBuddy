@@ -153,6 +153,7 @@ end
 
 function TB_OnEvent(event)
  	local TBAbility = "";
+
 	-- Execute this function whenever you get a string in the self damage spells section, or when variables are loaded.
 	if(event == "CHAT_MSG_SPELL_SELF_DAMAGE") then
 		if (englishClass == "WARRIOR") then
@@ -169,6 +170,9 @@ function TB_OnEvent(event)
 				TBAbility = TB_GUI_Growl;
 			end
 			if (string.find(arg1, TB_FFLine)) then 									-- Checks if your taunt was resisted
+				TBAbility = TB_GUI_FF;
+			end
+			if (string.find(arg1, TB_FFFLine)) then 									-- Checks if your taunt was resisted
 				TBAbility = TB_GUI_FF;
 			end
 		end		

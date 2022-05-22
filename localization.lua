@@ -63,6 +63,7 @@ TB_tauntLine = "Your Taunt was resisted by (%w+)";
 TB_growlLine = "Your Growl was resisted by (%w+)";
 --TB_FFLine = playerName .." 's Faerie Fire was resisted by (%w+)";
 TB_FFLine = "Your Faerie Fire was resisted by (%w+)";
+TB_FFFLine = "Your Faerie Fire %(Feral%) was resisted by (%w+)";
 TB_mbHitLine = "Your Mocking Blow (.+) for (.+)";
 TB_mb = "(.*)Mocking Blow(.*)";
 TB_ls = "You gain Last Stand.";
